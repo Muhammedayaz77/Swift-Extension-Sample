@@ -59,6 +59,7 @@ extension UIView {
 }
 
 extension Array where Element: Equatable {
+
     mutating func removeDuplicates() {
         var result = [Element]()
         for value in self {
@@ -161,6 +162,7 @@ extension UITextField{
 
 
 extension UIFont{
+
     // Returns a scaled version of UIFont
     func scaled(scaleFactor: CGFloat) -> UIFont {
         let newDescriptor = fontDescriptor.withSize(fontDescriptor.pointSize * scaleFactor)
