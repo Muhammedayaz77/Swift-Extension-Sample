@@ -3,9 +3,7 @@ Some Swift Extension Samples are provided here
 
 
 
-extension UIView 
-{
-
+extension UIView {
     /// Sets rounded corners to the UIView
     func roundedCorners(radius: CGFloat? = nil) {
         if let radius = radius {
@@ -61,7 +59,6 @@ extension UIView
 }
 
 extension Array where Element: Equatable {
-
     mutating func removeDuplicates() {
         var result = [Element]()
         for value in self {
@@ -81,7 +78,7 @@ extension String {
 }
 
 
-extension UIColor{
+extension UIColor {
     //get new color from rgb value
     class func RGB(_ red:CGFloat , andGreenColor green:CGFloat, andBlueColor blue:CGFloat, withAlpha alpha:CGFloat) -> UIColor
     {
@@ -109,7 +106,6 @@ extension UIColor{
 
 
 extension UITextField {
-    
     //set cornerRadius
     func cornerRadius(){
         self.layoutIfNeeded()
@@ -164,7 +160,6 @@ extension UITextField {
 
 
 extension UIFont {
-
     // Returns a scaled version of UIFont
     func scaled(scaleFactor: CGFloat) -> UIFont {
         let newDescriptor = fontDescriptor.withSize(fontDescriptor.pointSize * scaleFactor)
@@ -226,7 +221,6 @@ extension UIImage {
 
 
 extension Date {
-    
     //convert string to date
     static func convertStringToDate(strDate:String, dateFormate strFormate:String) -> Date{
         let dateFormate = DateFormatter()
