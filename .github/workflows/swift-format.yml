@@ -1,0 +1,17 @@
+name: Swift Format
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  format:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check Swift formatting
+        run: |
+          brew install swift-format
+          swift-format lint --recursive --configuration .swift-format Foundation UIKit SwiftUI
