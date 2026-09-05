@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "lineLength": 100,
+  "indentation": {
+    "spaces": 4
+  },
+  "lineBreakBeforeControlFlowKeywords": true,
+  "lineBreakBeforeEachArgument": false,
+  "lineBreakBeforeEachGenericRequirement": false,
+  "lineBreakBeforeEachParameter": false,
+  "lineBreakAroundMultilineExpressionChainComponents": false,
+  "respectsExistingLineBreaks": true,
+  "spacesBeforeEndOfLineComments": 1,
+  "tabWidth": 4,
+  "useTabs": false
+}
